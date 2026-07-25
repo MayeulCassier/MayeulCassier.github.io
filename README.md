@@ -1,15 +1,17 @@
-# Personal portfolio site
+# Mayeul Cassier — portfolio
 
-Static portfolio for Mayeul Cassier. The site has no build step: open `index.html`
-locally for a preview, or deploy the repository through the included GitHub Pages
-workflow.
+Live site: [https://mayeulcassier.github.io/](https://mayeulcassier.github.io/)
 
-## Publish with GitHub Pages
+Local working copy: `C:\A_Mayeul\Projects\GitHub\MayeulCassier.github.io`
 
-1. Push this repository to GitHub.
-2. In **Settings → Pages**, set **Source** to **GitHub Actions**.
-3. Push to `master`; the workflow in `.github/workflows/deploy-pages.yml` will
-   deploy the repository root.
+This static site has no build step: open `index.html` locally to preview it.
+GitHub Pages publishes the `master` branch.
 
-GitHub will display the live URL in the Pages settings once the first workflow
-finishes.
+## Project access
+
+| Project | Public repository (HTTPS) | Local clone |
+| --- | --- | --- |
+| Portfolio | [MayeulCassier.github.io](https://github.com/MayeulCassier/MayeulCassier.github.io) | `C:\A_Mayeul\Projects\GitHub\MayeulCassier.github.io` |
+| STEM reasoning with post-trained LLMs | [mnlp-stem-reasoning](https://github.com/MayeulCassier/mnlp-stem-reasoning) | `C:\A_Mayeul\Projects\GitHub\mnlp-stem-reasoning` |
+| Twitter sentiment classification | [twitter-sentiment-classification-epfl](https://github.com/MayeulCassier/twitter-sentiment-classification-epfl) | No local clone found in `C:\A_Mayeul\Projects\GitHub` |
+| Heart attack risk prediction | [heart-attack-risk-ml-epfl](https://github.com/MayeulCassier/heart-attack-risk-ml-epfl) | No local clone found in `C:\A_Mayeul\Projects\GitHub` |
