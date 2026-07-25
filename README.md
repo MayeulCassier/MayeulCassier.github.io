@@ -9,7 +9,7 @@ workflow.
 1. Push this repository to GitHub.
 2. In **Settings → Pages**, set **Source** to **GitHub Actions**.
 3. Push to `master`; the workflow in `.github/workflows/deploy-pages.yml` will
-   deploy the `site/` directory.
+   deploy the repository root.
 
 GitHub will display the live URL in the Pages settings once the first workflow
 finishes.
