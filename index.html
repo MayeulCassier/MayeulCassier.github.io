@@ -14,13 +14,15 @@
       (() => {
         const savedTheme = localStorage.getItem('theme');
         const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.dataset.theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        document.documentElement.dataset.theme = theme;
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', theme === 'dark' ? '#08111f' : '#f5f5f1');
       })();
     </script>
   </head>
   <body>
     <header class="header container">
-      <a class="wordmark" href="#top" aria-label="Mayeul Cassier, home"><img src="assets/mayeul-cassier-mark.svg" alt="" /></a>
+      <a class="wordmark" href="#top" aria-label="Mayeul Cassier, home"><img class="mark-light" src="assets/mayeul-cassier-mark-light.svg" alt="" /><img class="mark-dark" src="assets/mayeul-cassier-mark-dark.svg" alt="" /></a>
       <nav aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
@@ -39,7 +41,7 @@
         <p class="eyebrow">AI &amp; Data Science · Lausanne, Switzerland</p>
         <div class="identity-emblem" aria-hidden="true">
           <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="orbit-dot"></span>
-          <img src="assets/mayeul-cassier-mark.svg" alt="" />
+          <img class="mark-light" src="assets/mayeul-cassier-mark-light.svg" alt="" /><img class="mark-dark" src="assets/mayeul-cassier-mark-dark.svg" alt="" />
         </div>
         <h1>Mayeul<br /><em>Cassier.</em></h1>
         <p class="hero-statement">Building thoughtful AI systems.</p>
