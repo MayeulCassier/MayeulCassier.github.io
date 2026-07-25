@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mayeul Cassier — AI & Data Science engineer based in Lausanne." />
+    <meta name="theme-color" content="#08111f" />
+    <title>Mayeul Cassier — AI & Data Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="header container">
+      <a class="wordmark" href="#top" aria-label="Mayeul Cassier, home">MC<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle colour theme" aria-pressed="false">
+        <span class="sun" aria-hidden="true">☼</span>
+        <span class="toggle-track" aria-hidden="true"><span></span></span>
+        <span class="moon" aria-hidden="true">◐</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <p class="eyebrow">Based in Lausanne, Switzerland</p>
+        <h1>Building thoughtful<br /><em>AI systems.</em></h1>
+        <div class="hero-bottom">
+          <p class="intro">AI &amp; Data Science engineer with a foundation in physics, mathematics and practical machine learning.</p>
+          <a class="button" href="mailto:mayeul.cassier@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="availability"><span></span> Available for graduate roles from August 2026</div>
+      </section>
+
+      <section class="about section container" id="about">
+        <p class="section-label">01 — Profile</p>
+        <div class="section-content">
+          <h2>From rigorous models<br />to useful products.</h2>
+          <p class="large-copy">I enjoy the full journey from a difficult question to a clear, reliable system. My work combines machine learning, NLP and data tooling with an analytical approach shaped by physics.</p>
+          <div class="skills" aria-label="Technical skills">
+            <span>Python</span><span>Machine Learning</span><span>NLP &amp; LLMs</span><span>Knowledge Graphs</span><span>SQL</span><span>Docker</span><span>GCP</span><span>Research Engineering</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section container" id="experience">
+        <p class="section-label">02 — Experience</p>
+        <div class="section-content timeline">
+          <article class="timeline-item featured">
+            <p class="date">2026</p>
+            <div>
+              <h3>AI Intern <span>— Richemont AI Lab, R&amp;I</span></h3>
+              <p>Designed a knowledge graph and ML models for improved interpretability, and built an interface integrating an LLM-based agent. Worked across agentic AI, GCP, SQL, Docker and data visualisation.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <p class="date">2022—2025</p>
+            <div>
+              <h3>Teaching Assistant <span>— EPFL</span></h3>
+              <p>Supported 50+ students each semester in Python, mathematics and physics, turning complex technical topics into clear explanations.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <p class="date">2023—2024</p>
+            <div>
+              <h3>Vice President <span>— Students 4 Students / AGEPoly</span></h3>
+              <p>Coordinated a 900-student onboarding event, 150+ staff members, sponsors and a CHF 20,000 budget.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="education section container">
+        <p class="section-label">03 — Education</p>
+        <div class="section-content education-grid">
+          <div>
+            <p class="year">2024—2026</p>
+            <h3>Master in Data Science</h3>
+            <p>EPFL · Expected 2026</p>
+          </div>
+          <div>
+            <p class="year">2021—2024</p>
+            <h3>Bachelor in Physics</h3>
+            <p>EPFL</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section container" id="projects">
+        <p class="section-label">04 — Selected work</p>
+        <div class="section-content project-grid">
+          <a class="project-card project-main" href="https://github.com/MayeulCassier/mnlp-stem-reasoning" target="_blank" rel="noreferrer">
+            <p class="project-index">01</p>
+            <div><p class="project-type">NLP · LLM post-training</p><h3>STEM reasoning with post-trained LLMs</h3><p>Trained and evaluated Qwen-based variants for STEM multiple-choice reasoning, including DPO, MCQA and RAG-MCQA.</p></div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project-card" href="https://github.com/MayeulCassier/twitter-sentiment-classification-epfl" target="_blank" rel="noreferrer">
+            <p class="project-index">02</p>
+            <div><p class="project-type">NLP · Classification</p><h3>Twitter sentiment classification</h3><p>Compared classical and transformer-based approaches for large-scale tweet classification.</p></div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project-card" href="https://github.com/MayeulCassier/heart-attack-risk-ml-epfl" target="_blank" rel="noreferrer">
+            <p class="project-index">03</p>
+            <div><p class="project-type">Machine learning · Tabular data</p><h3>Heart attack risk prediction</h3><p>Built NumPy-based models and a robust preprocessing and cross-validation pipeline.</p></div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact container">
+        <p class="eyebrow">Let’s connect</p>
+        <h2>Have a project<br />in mind?</h2>
+        <a class="contact-email" href="mailto:mayeul.cassier@gmail.com">mayeul.cassier@gmail.com <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p>© <span id="year"></span> Mayeul Cassier</p>
+      <div><a href="https://www.linkedin.com/in/mayeul-cassier-48a8371b2" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/MayeulCassier" target="_blank" rel="noreferrer">GitHub</a></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
