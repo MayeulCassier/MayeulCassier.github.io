@@ -3,8 +3,9 @@ const toggle = document.querySelector('.theme-toggle');
 
 function updateToggle() {
   const dark = root.dataset.theme === 'dark';
+  const french = root.lang === 'fr';
   toggle.setAttribute('aria-pressed', String(dark));
-  toggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+  toggle.setAttribute('aria-label', french ? (dark ? 'Passer au thème clair' : 'Passer au thème sombre') : (dark ? 'Switch to light theme' : 'Switch to dark theme'));
 }
 
 toggle.addEventListener('click', () => {

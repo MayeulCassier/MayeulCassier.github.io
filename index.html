@@ -20,12 +20,13 @@
   </head>
   <body>
     <header class="header container">
-      <a class="wordmark" href="#top" aria-label="Mayeul Cassier, home">MC<span>.</span></a>
+      <a class="wordmark" href="#top" aria-label="Mayeul Cassier, home"><img src="assets/mayeul-cassier-mark.svg" alt="" /><span>MC</span></a>
       <nav aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
       </nav>
+      <a class="language-link" href="fr/" hreflang="fr" lang="fr">FR</a>
       <button class="theme-toggle" type="button" aria-label="Toggle colour theme" aria-pressed="false">
         <span class="sun" aria-hidden="true">☼</span>
         <span class="toggle-track" aria-hidden="true"><span></span></span>
@@ -35,8 +36,13 @@
 
     <main id="top">
       <section class="hero container">
-        <p class="eyebrow">Based in Lausanne, Switzerland</p>
-        <h1>Building thoughtful<br /><em>AI systems.</em></h1>
+        <p class="eyebrow">AI &amp; Data Science · Lausanne, Switzerland</p>
+        <div class="identity-emblem" aria-hidden="true">
+          <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="orbit-dot"></span>
+          <img src="assets/mayeul-cassier-mark.svg" alt="" />
+        </div>
+        <h1>Mayeul<br /><em>Cassier.</em></h1>
+        <p class="hero-statement">Building thoughtful AI systems.</p>
         <div class="hero-bottom">
           <p class="intro">AI &amp; Data Science engineer with a foundation in physics, mathematics and practical machine learning.</p>
           <a class="button" href="mailto:mayeul.cassier@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
@@ -102,18 +108,27 @@
         <p class="section-label">04 — Selected work</p>
         <div class="section-content project-grid">
           <a class="project-card project-main" href="https://github.com/MayeulCassier/mnlp-stem-reasoning" target="_blank" rel="noreferrer">
+            <img class="project-visual" src="assets/projects/mnlp-reasoning-pipeline.png" alt="Conceptual STEM reasoning pipeline" />
             <p class="project-index">01</p>
             <div><p class="project-type">NLP · LLM post-training</p><h3>STEM reasoning with post-trained LLMs</h3><p>Trained and evaluated Qwen-based variants for STEM multiple-choice reasoning, including DPO, MCQA and RAG-MCQA.</p></div>
             <span class="arrow" aria-hidden="true">↗</span>
           </a>
           <a class="project-card" href="https://github.com/MayeulCassier/twitter-sentiment-classification-epfl" target="_blank" rel="noreferrer">
+            <img class="project-visual" src="assets/projects/twitter-sentiment-pipeline.png" alt="Conceptual tweet sentiment pipeline" />
             <p class="project-index">02</p>
             <div><p class="project-type">NLP · Classification</p><h3>Twitter sentiment classification</h3><p>Compared classical and transformer-based approaches for large-scale tweet classification.</p></div>
             <span class="arrow" aria-hidden="true">↗</span>
           </a>
           <a class="project-card" href="https://github.com/MayeulCassier/heart-attack-risk-ml-epfl" target="_blank" rel="noreferrer">
+            <img class="project-visual" src="assets/projects/heart-risk-model-overview.png" alt="Conceptual tabular risk model" />
             <p class="project-index">03</p>
             <div><p class="project-type">Machine learning · Tabular data</p><h3>Heart attack risk prediction</h3><p>Built NumPy-based models and a robust preprocessing and cross-validation pipeline.</p></div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project-card" href="https://github.com/MayeulCassier/how-optimizers-generalize" target="_blank" rel="noreferrer">
+            <img class="project-visual" src="assets/projects/optimizer-generalization-results.png" alt="Optimizer comparison plot" />
+            <p class="project-index">04</p>
+            <div><p class="project-type">Optimization · Deep learning</p><h3>How optimizers generalize</h3><p>Compared classical, adaptive and constrained optimizers across MLP and CNN architectures.</p></div>
             <span class="arrow" aria-hidden="true">↗</span>
           </a>
         </div>

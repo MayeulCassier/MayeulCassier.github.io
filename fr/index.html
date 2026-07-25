@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mayeul Cassier — ingénieur IA et data science basé à Lausanne." />
+    <meta name="theme-color" content="#08111f" />
+    <title>Mayeul Cassier — IA et data science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="header container">
+      <a class="wordmark" href="#top" aria-label="Accueil Mayeul Cassier"><img src="../assets/mayeul-cassier-mark.svg" alt="" /><span>MC</span></a>
+      <nav aria-label="Navigation principale">
+        <a href="#about">Profil</a>
+        <a href="#experience">Expérience</a>
+        <a href="#projects">Projets</a>
+      </nav>
+      <a class="language-link" href="../" hreflang="en" lang="en">EN</a>
+      <button class="theme-toggle" type="button" aria-label="Changer de thème" aria-pressed="false">
+        <span class="sun" aria-hidden="true">☼</span>
+        <span class="toggle-track" aria-hidden="true"><span></span></span>
+        <span class="moon" aria-hidden="true">◐</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <p class="eyebrow">IA &amp; data science · Lausanne, Suisse</p>
+        <div class="identity-emblem" aria-hidden="true">
+          <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="orbit-dot"></span>
+          <img src="../assets/mayeul-cassier-mark.svg" alt="" />
+        </div>
+        <h1>Mayeul<br /><em>Cassier.</em></h1>
+        <p class="hero-statement">Concevoir des systèmes d’IA utiles et rigoureux.</p>
+        <div class="hero-bottom">
+          <p class="intro">Ingénieur IA &amp; data science, avec une formation en physique, mathématiques et machine learning appliqué.</p>
+          <a class="button" href="mailto:mayeul.cassier@gmail.com">Me contacter <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="availability"><span></span> Disponible pour un poste junior dès août 2026</div>
+      </section>
+
+      <section class="about section container" id="about">
+        <p class="section-label">01 — Profil</p>
+        <div class="section-content">
+          <h2>Des modèles rigoureux<br />aux produits utiles.</h2>
+          <p class="large-copy">J’aime transformer une question difficile en système clair et fiable. Mon travail combine machine learning, NLP et outils de données avec une approche analytique nourrie par la physique.</p>
+          <div class="skills" aria-label="Compétences techniques">
+            <span>Python</span><span>Machine Learning</span><span>NLP &amp; LLMs</span><span>Knowledge Graphs</span><span>SQL</span><span>Docker</span><span>GCP</span><span>Research Engineering</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section container" id="experience">
+        <p class="section-label">02 — Expérience</p>
+        <div class="section-content timeline">
+          <article class="timeline-item featured"><p class="date">2026</p><div><h3>Stagiaire IA <span>— Richemont AI Lab, R&amp;I</span></h3><p>Conception d’un graphe de connaissances et de modèles de ML pour améliorer l’interprétabilité, ainsi que d’une interface intégrant un agent basé sur un LLM.</p></div></article>
+          <article class="timeline-item"><p class="date">2022—2025</p><div><h3>Assistant d’enseignement <span>— EPFL</span></h3><p>Accompagnement de plus de 50 étudiants par semestre en Python, mathématiques et physique.</p></div></article>
+          <article class="timeline-item"><p class="date">2023—2024</p><div><h3>Vice-président <span>— Students 4 Students / AGEPoly</span></h3><p>Coordination d’un événement d’intégration de 900 étudiants, 150 membres du staff, des sponsors et un budget de CHF 20’000.</p></div></article>
+        </div>
+      </section>
+
+      <section class="education section container">
+        <p class="section-label">03 — Formation</p>
+        <div class="section-content education-grid">
+          <div><p class="year">2024—2026</p><h3>Master en data science</h3><p>EPFL · Prévu en 2026</p></div>
+          <div><p class="year">2021—2024</p><h3>Bachelor en physique</h3><p>EPFL</p></div>
+        </div>
+      </section>
+
+      <section class="projects section container" id="projects">
+        <p class="section-label">04 — Projets sélectionnés</p>
+        <div class="section-content project-grid">
+          <a class="project-card project-main" href="https://github.com/MayeulCassier/mnlp-stem-reasoning" target="_blank" rel="noreferrer"><img class="project-visual" src="../assets/projects/mnlp-reasoning-pipeline.png" alt="Pipeline conceptuel de raisonnement STEM" /><p class="project-index">01</p><div><p class="project-type">NLP · Post-entraînement de LLM</p><h3>Raisonnement STEM avec des LLM post-entraînés</h3><p>Entraînement et évaluation de variantes Qwen pour le raisonnement STEM à choix multiple, dont DPO, MCQA et RAG-MCQA.</p></div><span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="project-card" href="https://github.com/MayeulCassier/twitter-sentiment-classification-epfl" target="_blank" rel="noreferrer"><img class="project-visual" src="../assets/projects/twitter-sentiment-pipeline.png" alt="Pipeline conceptuel d’analyse de sentiment" /><p class="project-index">02</p><div><p class="project-type">NLP · Classification</p><h3>Analyse de sentiment sur Twitter</h3><p>Comparaison d’approches classiques et basées sur les transformers pour la classification de tweets à grande échelle.</p></div><span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="project-card" href="https://github.com/MayeulCassier/heart-attack-risk-ml-epfl" target="_blank" rel="noreferrer"><img class="project-visual" src="../assets/projects/heart-risk-model-overview.png" alt="Vue conceptuelle du modèle de risque tabulaire" /><p class="project-index">03</p><div><p class="project-type">Machine learning · Données tabulaires</p><h3>Prédiction du risque d’infarctus</h3><p>Modèles NumPy et pipeline robuste de prétraitement et de validation croisée pour l’analyse de facteurs de risque.</p></div><span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="project-card" href="https://github.com/MayeulCassier/how-optimizers-generalize" target="_blank" rel="noreferrer"><img class="project-visual" src="../assets/projects/optimizer-generalization-results.png" alt="Courbe de comparaison d’optimiseurs" /><p class="project-index">04</p><div><p class="project-type">Optimisation · Deep learning</p><h3>Comment les optimiseurs généralisent</h3><p>Comparaison d’optimiseurs classiques, adaptatifs et contraints sur des architectures MLP et CNN.</p></div><span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="contact container"><p class="eyebrow">Restons en contact</p><h2>Un projet<br />en tête ?</h2><a class="contact-email" href="mailto:mayeul.cassier@gmail.com">mayeul.cassier@gmail.com <span aria-hidden="true">↗</span></a></section>
+    </main>
+
+    <footer class="footer container"><p>© <span id="year"></span> Mayeul Cassier</p><div><a href="https://www.linkedin.com/in/mayeul-cassier-48a8371b2" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/MayeulCassier" target="_blank" rel="noreferrer">GitHub</a></div></footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
