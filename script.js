@@ -11,8 +11,10 @@ function updateToggle() {
 }
 
 toggle.addEventListener('click', () => {
-  root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-  localStorage.setItem('theme', root.dataset.theme);
+  const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  root.dataset.theme = nextTheme;
+  root.style.colorScheme = nextTheme;
+  localStorage.setItem('theme', nextTheme);
   updateToggle();
 });
 
